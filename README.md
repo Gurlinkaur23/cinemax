@@ -16,4 +16,4 @@ Cinemax is a web application where users can discover their favorite movies. Use
 - **JavaScript**: For the functionality and interaction.
 - **Font Awesome**: For icons used in the application.
 
-Click [here]() to see the live demonstration of the application.
+Click [here](https://gurlinkaur23.github.io/cinemax/) to see the live demonstration of the application.
