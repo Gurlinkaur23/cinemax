@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cinemax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./assets/style/index.css" media="all" />
+    <link rel="stylesheet" href="./assets/style/reset.css" media="all" />
+    <script src="./assets/script/index.js" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-text">
+        <h1>Cinemax</h1>
+        <p>Discover your favourite movies here</p>
+      </div>
+      <form>
+        <input placeholder="Search" class="input-movie-name" />
+        <ul class="dropdown-movie-names"></ul>
+        <button class="btn-find">Find Movie</button>
+        <p class="error-message">Movie not found</p>
+      </form>
+      <div class="movie-info">
+        <img class="movie-img" width="180" height="260"/>
+        <div class="movie-info-details">
+          <h2 class="movie-name"></h2>
+          <div class="movie-info-numeric">
+            <p class="movie-year"></p>
+            <i class="fa-solid fa-circle"></i>
+            <p class="movie-duration"></p>
+          </div>
+          <p class="movie-summary"></p>
+          <div class="movie-genre"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

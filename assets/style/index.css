@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+.container {
+  width: min(100% - 30px, 1080px);
+  height: 100vh;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------- HEADER TEXT ------- */
+
+.header-text {
+  text-align: center;
+  margin: 15px;
+}
+
+.header-text h1 {
+  text-transform: uppercase;
+}
+
+/* ------- FORM  ------- */
+
+form {
+  margin: 15px auto;
+  position: relative;
+}
+
+input {
+  width: 400px;
+  background-color: #27242e;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+}
+
+input::placeholder {
+  color: #c2c2c2;
+}
+
+/* -------  DROPDOWN ------- */
+
+.dropdown-movie-names {
+  list-style-type: none;
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 400px;
+  border-radius: 3px;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+.dropdown-movie-names li {
+  padding: 6px;
+  color: #111;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.dropdown-movie-names li:hover {
+  background-color: #433fff;
+  color: #fff;
+}
+
+/* -------  BUTTON FIND ------- */
+
+.btn-find {
+  background-color: #433fff;
+  border-radius: 3px;
+  padding: 12px 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.btn-find:hover {
+  background-color: #302bff;
+}
+
+/* ------- ERROR MESSAGE ------- */
+
+.error-message {
+  margin-top: 3px;
+  visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #fff;
+  color: #111;
+  padding: 8px;
+  width: 400px;
+  border-radius: 3px;
+}
+
+/* ------- MOVIE INFO CONTAINER ------- */
+
+.movie-info {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0px 20px 20px 20px;
+  padding: 0px 160px;
+  visibility: hidden;
+}
+
+.movie-info .movie-img {
+  width: 170px;
+  height: 260px;
+  border-radius: 3px;
+}
+
+.movie-info-details .movie-name {
+  margin-bottom: 4px;
+}
+
+.movie-info-details .movie-info-numeric {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.fa-circle {
+  margin-top: 7px;
+  font-size: 5px;
+  color: #37e654;
+}
+
+.movie-info-details .movie-summary {
+  margin: 25px auto;
+  padding-right: 20px;
+}
+
+.movie-genre {
+  display: flex;
+  gap: 10px;
+}
+.movie-genre .genre {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 4px 12px;
+  background-color: #27242e;
+}
